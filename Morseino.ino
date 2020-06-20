@@ -7,7 +7,7 @@ void setup() {
 void loop() {
  
  //Serial.println(morse.getDot());
- Serial.println(morse.translateSentence("Mi nombre es javi"));
+ Serial.println(morse.translateSentence(Serial.read()));
  delay(1000);
 
 }
