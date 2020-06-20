@@ -5,9 +5,9 @@ void setup() {
   Serial.begin(9600);
 }
 void loop() {
- 
- //Serial.println(morse.getDot());
- Serial.println(morse.translateSentence(Serial.read()));
- delay(1000);
 
+String sentence = "Hello";
+  Serial.println("The sentence is: " + sentence);
+  Serial.println("The translated sentence is: " + morse.translateSentence(sentence));
+  delay(1000);
 }
